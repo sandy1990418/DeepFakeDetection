@@ -3,6 +3,9 @@
 ## Overview
 This is reproduction of Xia, Z., Qiao, T., Xu, M., Zheng, N., Xie, S. (2022). Towards DeepFake video forensics based on facial textural disparities in multi-color channels. Information Sciences, 607, 654–669.
 
+## Concept 
+reproduce method of the Xia et al. (2022) 
+
 ## Steps
 Step 1: Perform simple random sampling to select 30 images from each video. (In this repo used system sampling)
 
