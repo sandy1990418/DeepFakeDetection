@@ -25,7 +25,7 @@ To reproduce the findings outlined in the aforementioned paper, the following st
 
 3. **Feature Engineering**: Compute the first-order differential of each image block and subsequently perform Min-Max normalization to standardize the resulting values, ensuring consistent feature scaling across the dataset.
 
-4. **Feature Transformation**: Derive the feature difference $F_{ij}$ by subtracting the function values of adjacent blocks ($f(b_{ij}) - f(b_{ij+1})$). Round off the result to the nearest integer to maintain numerical stability.
+4. **Feature Transformation**: Derive the feature difference $F_{ij}$ by subtracting the function values of adjacent blocks $(f(b_{ij}) - f(b_{ij+1}))$. Round off the result to the nearest integer to maintain numerical stability.
 
 5. **Thresholding**: Establish a threshold value $T (=2)$. If the calculated feature difference $F_{ij}$ exceeds this threshold, set it to 2; conversely, if it falls below -2, set it to -2. This step helps mitigate noise and enhance feature discriminability.
 
