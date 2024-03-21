@@ -8,7 +8,6 @@ The primary objective of this project is to replicate and validate the research 
 To illustrate the process of reproducing the findings outlined in the aforementioned paper, I provide a detailed demonstration of the methodology employed:
 
 
-
 Step 1: Perform simple random sampling to select 30 images from each video. (In this repo used system sampling)
 
 Step 2: Divide each image into $256*256$ blocks, and due to equipment constraints, reduce the image size to $128*128$.
