@@ -1,7 +1,7 @@
 # DeepFake Detection Using Facial Textural Analysis
 
 ## Overview
-The primary objective of this project is to replicate and validate the research findings of Xia et al. in the domain of DeepFake video forensics.
+The primary objective of this project is to replicate, validate the effectiveness and reliability of the DeepFake detection methodology proposed by Xia et al. (2022). in the domain of DeepFake video forensics.
 
 <br>
 
@@ -34,9 +34,6 @@ To reproduce the findings outlined in the aforementioned paper, the following st
 7. **Feature Selection**: Focus solely on computing the co-occurrence matrix for Red (R), Green (G), Blue (B), Value (V), and Luminance (Y) channels to obtain a total of 375 variables. This selective feature extraction strategy ensures the inclusion of informative features while reducing computational complexity.
 
 8. **Model Training and Evaluation**: Utilize Support Vector Machine (SVM) with the extracted 375 variables as inputs. Additionally, leverage Logistic Regression, Naive Bayes, Kernel SVM, and Random Forest classifiers for comprehensive model evaluation. This step assesses the performance of the proposed methodology across diverse classification frameworks, ensuring robustness and generalizability.
-
-Through these steps, the reproduction process aims to validate the effectiveness and reliability of the DeepFake detection methodology proposed by Xia et al. (2022).
-
 
 <br>
 
