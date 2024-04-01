@@ -1,4 +1,4 @@
-# DeepFake Detection Using Facial Textural Analysis
+# DeepFake Detection 
 
 ## Overview
 The primary objective of this project is to replicate, validate the effectiveness and reliability of the DeepFake detection methodology proposed by Xia et al. (2022). in the domain of DeepFake video forensics.
