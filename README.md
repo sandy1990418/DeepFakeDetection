@@ -1,4 +1,4 @@
-# DeepFake Detection 
+# Towards DeepFake video forensics based on facial textural disparities in multi-color channels
 
 ## Overview
 The primary objective of this project is to replicate, validate the effectiveness and reliability of the DeepFake detection methodology proposed by Xia et al. (2022). in the domain of DeepFake video forensics.
