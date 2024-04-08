@@ -8,7 +8,7 @@ def main(args):
     ##### 把整理好的資料進行特徵萃取 #######
     df_index = pd.read_pickle(args.file_path)
     tqdm.pandas()
-    block = df_index['index'].progress_apply(lambda x : get_texture(df_index.iloc[x]))
+    block = df_index['index'].progress_apply(lambda x : get_texture(df_index.iloc[x],image_size))
     df_index = pd.concat([df_index,block],axis=1)
     df_index.to_pickle(args.storage_dir)
     del df_index

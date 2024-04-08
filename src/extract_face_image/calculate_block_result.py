@@ -187,10 +187,6 @@ class Video_file:
 
 
 
-
-
-
-
 class Block_img:
     def __init__(self,df,split_number=128):
         self.img_location =  f'{df.file_location}/{df.file_name}'
@@ -249,33 +245,33 @@ class Block_img:
     
     
     @block_split
-    def B_input(self):
+    def B_input(self,image_size):
         img = cv.imread(self.img_location,cv.IMREAD_COLOR)
-        img = cv.resize(img,(256,256))
+        img = cv.resize(img,(image_size,image_size))
         return img[:,:,0]
 
     @block_split
-    def G_input(self):
+    def G_input(self,image_size):
         img = cv.imread(self.img_location,cv.IMREAD_COLOR)
-        img = cv.resize(img,(256,256))
+        img = cv.resize(img,(image_size,image_size))
         return img[:,:,1]
 
     @block_split
-    def R_input(self):
+    def R_input(self,image_size):
         img = cv.imread(self.img_location,cv.IMREAD_COLOR)
-        img = cv.resize(img,(256,256))
+        img = cv.resize(img,(image_size,image_size))
         return img[:,:,2]
 
     @block_split
-    def HSV_input(self):
+    def HSV_input(self,image_size):
         ## 只抓出V的部分
         img = cv.cvtColor(cv.imread(self.img_location,cv.IMREAD_COLOR),cv.COLOR_BGR2HSV)
-        img = cv.resize(img,(256,256))
+        img = cv.resize(img,(image_size,image_size))
         return img[:,:,2]
     
     @block_split
-    def YCrCb_input(self):
+    def YCrCb_input(self,image_size):
         ## 只抓出Y的部分
         img = cv.cvtColor(cv.imread(self.img_location,cv.IMREAD_COLOR) ,cv.COLOR_BGR2YCrCb)
-        img = cv.resize(img,(256,256))
+        img = cv.resize(img,(image_size,image_size))
         return img[:,:,0]

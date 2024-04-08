@@ -11,12 +11,12 @@ from IPython.display import display
 
 
 def get_texture(df):
-    get_texture_class=Block_img(df)
-    return pd.Series({f'B_GLCM' : get_texture_class.B_input(),
-                      f'G_GLCM' : get_texture_class.G_input(),
-                      f'R_GLCM' : get_texture_class.R_input(),
-                      f'V_GLCM' : get_texture_class.HSV_input(),
-                      f'Y_GLCM' : get_texture_class.YCrCb_input()})
+    get_texture_class=Block_img(df,image_size)
+    return pd.Series({f'B_GLCM' : get_texture_class.B_input(image_size),
+                      f'G_GLCM' : get_texture_class.G_input(image_size),
+                      f'R_GLCM' : get_texture_class.R_input(image_size),
+                      f'V_GLCM' : get_texture_class.HSV_input(image_size),
+                      f'Y_GLCM' : get_texture_class.YCrCb_input(image_size)})
 
 
 def df_clean(df):
