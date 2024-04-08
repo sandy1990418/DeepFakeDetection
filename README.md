@@ -56,10 +56,12 @@ One of dataset in reproduced paper is [Celeb-DF](https://github.com/yuezunli/cel
 ## Experiment Result
 The table below presents the results of the conducted experiments:
 
-|Method             | Block Number  | Logistic Regression ACC | Naive Bayes ACC | Kernel SVM ACC |Random Forest ACC |
-|-------------------|:-------------:|:-----------------------:|:----------------:|:----------------:|:----------------:|
-| Xia et al. (2022) | $128\times128$| 0.66                    |0.60             |0.69|0.81|
+|Method             | Block Number  | IF Background  | Logistic Regression ACC | Naive Bayes ACC | Kernel SVM ACC |Random Forest ACC |
+|-------------------|:-------------:|:-------------:|:-----------------------:|:----------------:|:----------------:|:----------------:|
+| Xia et al. (2022) | $128\times128$| Extract Face  | 0.66                    |0.60             |0.69|0.81|
+| Xia et al. (2022) | $128\times128$| Extract Face  | 0.57                    |0.54             |0.60|0.80|
 
+***Note:*** `IF Background` indicates whether the background should be retained or removed if extracting a face from an image.
 
 
 <br>
