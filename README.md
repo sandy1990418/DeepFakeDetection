@@ -59,7 +59,7 @@ The table below presents the results of the conducted experiments:
 |Method             | Block Number  | IF Background  | Logistic Regression ACC | Naive Bayes ACC | Kernel SVM ACC |Random Forest ACC |
 |-------------------|:-------------:|:-------------:|:-----------------------:|:----------------:|:----------------:|:----------------:|
 | Xia et al. (2022) | $128\times128$| Extract Face  | 0.66                    |0.60             |0.69|0.81|
-| Xia et al. (2022) | $128\times128$| Extract Face  | 0.57                    |0.54             |0.60|0.80|
+| Xia et al. (2022) | $128\times128$| Keep Background  | 0.57                    |0.54             |0.60|0.80|
 
 ***Note:*** `IF Background` indicates whether the background should be retained or removed if extracting a face from an image.
 
